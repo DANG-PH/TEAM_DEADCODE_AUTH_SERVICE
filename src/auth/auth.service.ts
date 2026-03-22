@@ -92,7 +92,7 @@ export class AuthService {
 
     this.emailClient.emit('send_email', {
       to: user.email,
-      subject: 'Xác thực đăng nhập – GAMOTA',
+      subject: 'Xác thực đăng nhập',
       html: otpEmailTemplate(user, otp),
     });
 
